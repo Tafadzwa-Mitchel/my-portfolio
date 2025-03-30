@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tafadzwa's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Tafadzwa.M</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Tafadzwa.M</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/image.png" alt="Tafadzwa Makanganise profile picture" style="border-radius: 200px;">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title" id="title">Tafadzwa M. Makanganise</h1>
+      <p class="section__text__p2"> a Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open(
+              'https://github.com/Tafadzwa-Mitchel',
+              '_blank' 
+            )" />
+      </div>
+    </div>
+    <img class="icon arrow" src="./assets/arrow.png" alt="Arrow icon" onclick="location.href='./#about'" />
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <img style="border-radius:150px; width: 150px; height:150px; margin-left: 40%;" src="assets/my-star.jpeg" alt="My profile picture" loading="lazy">    
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img class="icon" src="./assets/experience.png" alt="Experience icon" />
+            <h3>Experience</h3>
+            <p>6+ months<br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img class="icon" src="./assets/education.png" alt="Education icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors of Science Honours Degree in Cloud Computing and IoT</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            "As a Web Development and Mobile Application student at the University of Zimbabwe, I have cultivated a passion for crafting innovative digital solutions that transform user experiences. With a solid foundation in programming languages such as HTML, CSS, JavaScript, and Java, I have developed a range of skills in web and mobile application development, including design, development, testing, and deployment. Through various academic projects and personal initiatives, I have successfully designed and developed responsive websites, mobile applications, and web applications, showcasing my ability to bring ideas to life through code. This portfolio highlights my technical skills, creativity, and dedication to delivering high-quality digital solutions that meet the needs of clients and users alike."
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section__video-container">
+      <video class="my-video" src="assets/my-video.mp4" controls></video>
+    </div>
+    <img class="icon arrow" src="./assets/arrow.png" alt="Arrow icon" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experence-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>No experience </p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>No experience</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>No experience</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img class="icon" src="./assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>.NET Core</h3>
+                <p>No Experience</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>AWS</h3>
+                <p>No Experience</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>Azure</h3>
+                <p>No Experience</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>MS SQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>Node.js</h3>
+                <p>No experience </p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/cross-no-image.jpg" alt="Experience icon" />
+              <div>
+                <h3>Django</h3>
+                <p>No experience </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="icon arrow" src="./assets/arrow.png" alt="Arrow icon" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experence-details-container">
+      <div class="about-containers" id="project-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img style="height: 400px;" src="./assets/water-meter.png" alt="Project 1" class="project-img" loading="lazy" />
+          </div>
+          <h2 class="experience-sub-title project-title">Smart Water Meter</h2>
+          <div class="btn-container">
+            <button id="btn" class="btn btn-color-2 project-btn" onclick="window.open('./assets/smart-water-meter.pdf')">
+              Project Description
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img style="height: 400px;" src="./assets/fruit-shop.png" alt="Project 2" class="project-img" loading="lazy" />
+          </div>
+          <h2 class="experience-sub-title project-title">Strawberry Fruit Shop </h2>
+          <div class="btn-container">
+            <button id="btn" class="btn btn-color-2 project-btn" onclick="window.open('./assets/strawberry.pdf')">
+              Project Description
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/nails.png" alt="Project 3" class="project-img" loading="lazy" />
+          </div>
+          <h2 class="experience-sub-title project-title">Hair&Nail Salon website</h2>
+          <div class="btn-container">
+            <button id="btn" class="btn btn-color-2 project-btn" onclick="window.open('./assets/nails.pdf')">
+              Project Description
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="form-wrap">       
+      <h4 class="form-title">LET'S TALK <span>-Send me a message-</span></h4>
+    <form onsubmit="return false">
+      
+      <div class="form-fields">
+       
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Name" required>
+        </div>
+        
+       
+        
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        
+
+        
+        <div class="form-group">
+          <textarea name="message" placeholder="What's on your mind right now?" required></textarea>
+        </div>
+        
+      </div>
+      
+      <button id="submit-button" onclick="submitForm()">Send Message</button>
+      
+    </form>
+  </div>
+  
+</div>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:tmakanganise2004@gmail.com">tmakanganise2004@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+        <p><a href="https://github.com/Tafadzwa-Mitchel" target="_blank">Git Hub</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Tafadzwa Makanganise. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
